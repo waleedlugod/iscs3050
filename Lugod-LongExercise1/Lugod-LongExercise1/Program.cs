@@ -1,7 +1,5 @@
 ﻿int choice;
-List<Burger> burgers = new List<Burger>();
-List<Side> sides = new List<Side>();
-List<Wrap> wraps = new List<Wrap>();
+List<Order> orders = new List<Order>();
 
 do
 {
@@ -60,9 +58,9 @@ void OrderBurger()
     hasVeggies = input == "y";
 
     Burger burger = new Burger(extraPatties, extraCheese, hasVeggies);
-    burgers.Add(burger);
+    orders.Add(burger);
 
-    Console.WriteLine($"Burger with {extraPatties} extra patties, {(extraCheese > 0 ? extraCheese : "no")} extra cheese slices added, and {(hasVeggies ? "" : "no")} veggies added! Subtotal: {burger.cost} PHP");
+    Console.WriteLine($"{burger.GetDescription()} added! Subtotal: {burger.cost} PHP");
 }
 void OrderSide()
 {
@@ -109,9 +107,9 @@ void OrderSide()
     } while (!int.TryParse(input, out size) || size < 1 || size > 2);
 
     Side side = new Side(type, size);
-    sides.Add(side);
+    orders.Add(side);
 
-    Console.WriteLine($"{side.size} {side.type} added! Subtotal: {side.cost} PHP");
+    Console.WriteLine($"{side.GetDescription()} added! Subtotal: {side.cost} PHP");
 }
 void OrderWrap()
 {
@@ -145,21 +143,41 @@ void OrderWrap()
     } while (!int.TryParse(input, out spiceLevel) || spiceLevel < 1 || spiceLevel > 3);
 
     Wrap wrap = new Wrap(extraCheese, isAllMeat, spiceLevel);
-    wraps.Add(wrap);
+    orders.Add(wrap);
 
-    string res = $"{(isAllMeat ? "All meat" : "")} {wrap.spiceLevel?.ToLower()} wrap with {(extraCheese > 0 ? extraCheese : "no")} extra cheese added! Subtotal: {wrap.cost} PHP".Trim();
-    Console.WriteLine($"{char.ToUpper(res[0])}{res[1..]}");
+    Console.WriteLine($"{wrap.GetDescription()} added! Subtotal: {wrap.cost} PHP");
 }
-void ViewItems() { }
+void ViewItems()
+{
+    int itemCount = 0;
+    if (!orders.Any())
+    {
+        Console.WriteLine("No items added!");
+    }
+    else
+    {
+        Console.WriteLine("Your order:");
+        foreach (Order order in orders)
+        {
+            itemCount++;
+            Console.WriteLine($"({itemCount}) {order.GetDescription()} ({order.cost} PHP)");
+        }
+    }
+}
 void RemoveItem() { }
 void FinishOrder() { }
 
-class Burger
+abstract class Order
+{
+    public int cost;
+    public abstract string GetDescription();
+}
+
+class Burger : Order
 {
     public int extraPatties;
     public int extraCheese;
     public bool hasVeggies;
-    public int cost;
     public Burger(int extraPatties, int extraCheese, bool hasVeggies)
     {
         this.extraPatties = extraPatties;
@@ -167,13 +185,16 @@ class Burger
         this.hasVeggies = hasVeggies;
         cost = 50 + 50 * extraPatties + 25 * extraCheese;
     }
+    public override string GetDescription()
+    {
+        return $"Burger with {extraPatties} extra patties, {(extraCheese > 0 ? extraCheese : "no")} extra cheese slices added, and{(hasVeggies ? "" : " no")} veggies";
+    }
 }
 
-class Side
+class Side : Order
 {
     public string? type;
     public string? size;
-    public int cost;
     public Side(int type, int size)
     {
         switch (type)
@@ -194,14 +215,17 @@ class Side
             case "Bacon Chips": cost = this.size == "Medium" ? 70 : 105; break;
         }
     }
+    public override string GetDescription()
+    {
+        return $"{size} {type}";
+    }
 }
 
-class Wrap
+class Wrap : Order
 {
     public int extraCheese;
     public bool isAllMeat;
     public string? spiceLevel;
-    public int cost;
     public Wrap(int extraCheese, bool isAllMeat, int spiceLevel)
     {
         this.extraCheese = extraCheese;
@@ -213,5 +237,9 @@ class Wrap
             case 3: this.spiceLevel = "Very Spicy"; break;
         }
         this.cost = 100 + 20 * extraCheese;
+    }
+    public override string GetDescription()
+    {
+        return $"{(isAllMeat ? "All meat" : "")} {spiceLevel?.ToLower()} wrap with {(extraCheese > 0 ? extraCheese : "no")} extra cheese".Trim();
     }
 }
