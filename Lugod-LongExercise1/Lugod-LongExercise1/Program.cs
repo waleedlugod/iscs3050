@@ -164,7 +164,27 @@ void ViewItems()
         }
     }
 }
-void RemoveItem() { }
+void RemoveItem()
+{
+    string? input;
+    int choice;
+
+    if (!orders.Any())
+    {
+        Console.WriteLine("No items added!");
+    }
+    else
+    {
+        do
+        {
+            Console.WriteLine("Which would you like to remove:");
+            ViewItems();
+            input = Console.ReadLine();
+        } while (!int.TryParse(input, out choice) || choice < 1 || orders.Count() > 3);
+        orders.RemoveAt(choice - 1);
+    }
+
+}
 void FinishOrder() { }
 
 abstract class Order
