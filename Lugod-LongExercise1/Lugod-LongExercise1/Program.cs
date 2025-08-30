@@ -147,9 +147,17 @@ void OrderWrap()
 
     Console.WriteLine($"{wrap.GetDescription()} added! Subtotal: {wrap.cost} PHP");
 }
-void ViewItems()
+void ListItems()
 {
     int itemCount = 0;
+    foreach (Order order in orders)
+    {
+        itemCount++;
+        Console.WriteLine($"({itemCount}) {order.GetDescription()} ({order.cost} PHP)");
+    }
+}
+void ViewItems()
+{
     if (!orders.Any())
     {
         Console.WriteLine("No items added!");
@@ -157,11 +165,8 @@ void ViewItems()
     else
     {
         Console.WriteLine("Your order:");
-        foreach (Order order in orders)
-        {
-            itemCount++;
-            Console.WriteLine($"({itemCount}) {order.GetDescription()} ({order.cost} PHP)");
-        }
+        ListItems();
+        Console.ReadKey();
     }
 }
 void RemoveItem()
@@ -178,14 +183,31 @@ void RemoveItem()
         do
         {
             Console.WriteLine("Which would you like to remove:");
-            ViewItems();
+            ListItems();
             input = Console.ReadLine();
         } while (!int.TryParse(input, out choice) || choice < 1 || orders.Count() > 3);
         orders.RemoveAt(choice - 1);
     }
 
 }
-void FinishOrder() { }
+void FinishOrder()
+{
+    if (!orders.Any())
+    {
+        Console.WriteLine("No items added!");
+    }
+    else
+    {
+        int totalCost = 0;
+        foreach (Order order in orders)
+        {
+            totalCost += order.cost;
+        }
+        Console.WriteLine("Your order:");
+        ListItems();
+        Console.WriteLine($"Total Price: {orders.Select(order => order.cost).Sum()} PHP");
+    }
+}
 
 abstract class Order
 {
