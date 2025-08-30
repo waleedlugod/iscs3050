@@ -1,6 +1,6 @@
-﻿int choice;
-List<Order> orders = new List<Order>();
+﻿List<Order> orders = new List<Order>();
 
+int choice;
 do
 {
     Console.WriteLine("""
@@ -149,45 +149,45 @@ void OrderWrap()
 }
 void ListItems()
 {
-    int itemCount = 0;
+    int idx = 0;
     foreach (Order order in orders)
     {
-        itemCount++;
-        Console.WriteLine($"({itemCount}) {order.GetDescription()} ({order.cost} PHP)");
+        idx++;
+        Console.WriteLine($"({idx}) {order.GetDescription()} ({order.cost} PHP)");
     }
 }
 void ViewItems()
 {
-    if (!orders.Any())
+    if (orders.Count <= 0)
     {
         Console.WriteLine("No items added!");
-        Console.ReadKey();
     }
     else
     {
         Console.WriteLine("Your order:");
         ListItems();
-        Console.ReadKey();
     }
 }
 void RemoveItem()
 {
-    string? input;
+    string? input = null;
     int choice;
 
     if (orders.Count <= 0)
     {
         Console.WriteLine("No items added!");
-        Console.ReadKey();
     }
     else
     {
         do
         {
+            if (input != null) { Console.WriteLine(); }
             Console.WriteLine("Which would you like to remove:");
             ListItems();
             input = Console.ReadLine();
-        } while (!int.TryParse(input, out choice) || choice < 1 || orders.Count() > 3);
+        } while (!int.TryParse(input, out choice) || choice < 1 || choice > orders.Count);
+
+        Console.WriteLine($"{orders[choice - 1].GetDescription()} removed!");
         orders.RemoveAt(choice - 1);
     }
 
@@ -261,7 +261,7 @@ class Side : Order
     }
     public override string GetDescription()
     {
-        return $"{size} {type}";
+        return $"{size} {type?.ToLower()}";
     }
 }
 
@@ -278,12 +278,12 @@ class Wrap : Order
         {
             case 1: this.spiceLevel = "Mild"; break;
             case 2: this.spiceLevel = "Spicy"; break;
-            case 3: this.spiceLevel = "Very Spicy"; break;
+            case 3: this.spiceLevel = "Very spicy"; break;
         }
         this.cost = 100 + 20 * extraCheese;
     }
     public override string GetDescription()
     {
-        return $"{(isAllMeat ? "All meat" : "")} {spiceLevel?.ToLower()} wrap with {(extraCheese > 0 ? extraCheese : "no")} extra cheese".Trim();
+        return $"{(isAllMeat ? "All meat " : "")}{(isAllMeat ? spiceLevel?.ToLower() : spiceLevel)} wrap with {(extraCheese > 0 ? extraCheese : "no")} extra cheese";
     }
 }
