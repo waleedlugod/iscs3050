@@ -161,6 +161,7 @@ void ViewItems()
     if (!orders.Any())
     {
         Console.WriteLine("No items added!");
+        Console.ReadKey();
     }
     else
     {
@@ -174,9 +175,10 @@ void RemoveItem()
     string? input;
     int choice;
 
-    if (!orders.Any())
+    if (orders.Count <= 0)
     {
         Console.WriteLine("No items added!");
+        Console.ReadKey();
     }
     else
     {
@@ -192,7 +194,7 @@ void RemoveItem()
 }
 void FinishOrder()
 {
-    if (!orders.Any())
+    if (orders.Count <= 0)
     {
         Console.WriteLine("No items added!");
     }
