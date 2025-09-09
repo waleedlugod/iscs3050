@@ -20,14 +20,23 @@ do
     {
         switch (choice)
         {
-            case 1: OrderBurger(); break;
-            case 2: OrderSide(); break;
-            case 3: OrderWrap(); break;
-            case 4: ViewItems(); break;
-            case 5: RemoveItem(); break;
+            case 1:
+                OrderBurger();
+                Console.WriteLine(); break;
+            case 2:
+                OrderSide();
+                Console.WriteLine(); break;
+            case 3:
+                OrderWrap();
+                Console.WriteLine(); break;
+            case 4:
+                ViewItems();
+                Console.WriteLine(); break;
+            case 5:
+                RemoveItem();
+                Console.WriteLine(); break;
             case 6: FinishOrder(); break;
         }
-        Console.WriteLine();
     }
 } while (choice != 6);
 
