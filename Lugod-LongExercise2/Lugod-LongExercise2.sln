@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lugod-LongExercise2", "Lugod-LongExercise2.csproj", "{A774A0EF-7695-48B3-88F5-CA1B57893E39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A774A0EF-7695-48B3-88F5-CA1B57893E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A774A0EF-7695-48B3-88F5-CA1B57893E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A774A0EF-7695-48B3-88F5-CA1B57893E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A774A0EF-7695-48B3-88F5-CA1B57893E39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {282C9E9C-2779-4257-ACFE-6E4741D3AA10}
+	EndGlobalSection
+EndGlobal
