@@ -30,14 +30,15 @@
         {
             tableLayoutPanel1 = new TableLayoutPanel();
             label1 = new Label();
-            textBox1 = new TextBox();
-            button1 = new Button();
+            textBoxChoice = new TextBox();
+            buttonAddChoice = new Button();
             label2 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            listBox1 = new ListBox();
+            buttonSetAnswers = new Button();
+            buttonDeleteChoices = new Button();
+            buttonUpdateChoice = new Button();
+            listBoxChoices = new ListBox();
+            buttonAdd = new Button();
             tableLayoutPanel1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
@@ -48,51 +49,55 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle());
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Controls.Add(label1, 0, 0);
-            tableLayoutPanel1.Controls.Add(textBox1, 1, 0);
-            tableLayoutPanel1.Controls.Add(button1, 1, 1);
+            tableLayoutPanel1.Controls.Add(textBoxChoice, 1, 0);
+            tableLayoutPanel1.Controls.Add(buttonAddChoice, 1, 1);
             tableLayoutPanel1.Controls.Add(label2, 0, 2);
             tableLayoutPanel1.Controls.Add(flowLayoutPanel1, 1, 3);
-            tableLayoutPanel1.Controls.Add(listBox1, 1, 2);
+            tableLayoutPanel1.Controls.Add(listBoxChoices, 1, 2);
+            tableLayoutPanel1.Controls.Add(buttonAdd, 1, 4);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 4;
+            tableLayoutPanel1.RowCount = 5;
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 32F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle());
+            tableLayoutPanel1.RowStyles.Add(new RowStyle());
             tableLayoutPanel1.Size = new Size(431, 307);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Left;
+            label1.Anchor = AnchorStyles.Right;
             label1.AutoSize = true;
-            label1.Location = new Point(3, 7);
+            label1.Location = new Point(8, 7);
             label1.Name = "label1";
             label1.Size = new Size(47, 15);
             label1.TabIndex = 0;
             label1.Text = "Choice:";
             // 
-            // textBox1
+            // textBoxChoice
             // 
-            textBox1.Anchor = AnchorStyles.Left;
-            textBox1.Location = new Point(61, 3);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(367, 23);
-            textBox1.TabIndex = 1;
+            textBoxChoice.Anchor = AnchorStyles.Left;
+            textBoxChoice.Location = new Point(61, 3);
+            textBoxChoice.Name = "textBoxChoice";
+            textBoxChoice.Size = new Size(367, 23);
+            textBoxChoice.TabIndex = 1;
             // 
-            // button1
+            // buttonAddChoice
             // 
-            button1.Location = new Point(61, 32);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 2;
-            button1.Text = "Add choice";
-            button1.UseVisualStyleBackColor = true;
+            buttonAddChoice.Location = new Point(61, 32);
+            buttonAddChoice.Name = "buttonAddChoice";
+            buttonAddChoice.Size = new Size(75, 23);
+            buttonAddChoice.TabIndex = 2;
+            buttonAddChoice.Text = "Add choice";
+            buttonAddChoice.UseVisualStyleBackColor = true;
+            buttonAddChoice.Click += buttonAddChoice_Click;
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Location = new Point(3, 58);
             label2.Name = "label2";
@@ -102,56 +107,69 @@
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.Controls.Add(button2);
-            flowLayoutPanel1.Controls.Add(button3);
-            flowLayoutPanel1.Controls.Add(button4);
+            flowLayoutPanel1.Controls.Add(buttonSetAnswers);
+            flowLayoutPanel1.Controls.Add(buttonDeleteChoices);
+            flowLayoutPanel1.Controls.Add(buttonUpdateChoice);
             flowLayoutPanel1.Dock = DockStyle.Fill;
-            flowLayoutPanel1.Location = new Point(61, 278);
+            flowLayoutPanel1.Location = new Point(58, 246);
+            flowLayoutPanel1.Margin = new Padding(0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(367, 26);
+            flowLayoutPanel1.Size = new Size(373, 32);
             flowLayoutPanel1.TabIndex = 5;
             // 
-            // button2
+            // buttonSetAnswers
             // 
-            button2.Anchor = AnchorStyles.Left;
-            button2.Location = new Point(3, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(109, 23);
-            button2.TabIndex = 0;
-            button2.Text = "Set as answer(s)";
-            button2.UseVisualStyleBackColor = true;
+            buttonSetAnswers.Anchor = AnchorStyles.Left;
+            buttonSetAnswers.Location = new Point(3, 3);
+            buttonSetAnswers.Name = "buttonSetAnswers";
+            buttonSetAnswers.Size = new Size(109, 23);
+            buttonSetAnswers.TabIndex = 0;
+            buttonSetAnswers.Text = "Set as answer(s)";
+            buttonSetAnswers.UseVisualStyleBackColor = true;
+            buttonSetAnswers.Click += buttonSetAnswers_Click;
             // 
-            // button3
+            // buttonDeleteChoices
             // 
-            button3.Anchor = AnchorStyles.Left;
-            button3.Location = new Point(118, 3);
-            button3.Name = "button3";
-            button3.Size = new Size(107, 23);
-            button3.TabIndex = 1;
-            button3.Text = "Delete choice(s)";
-            button3.UseVisualStyleBackColor = true;
+            buttonDeleteChoices.Anchor = AnchorStyles.Left;
+            buttonDeleteChoices.Location = new Point(118, 3);
+            buttonDeleteChoices.Name = "buttonDeleteChoices";
+            buttonDeleteChoices.Size = new Size(107, 23);
+            buttonDeleteChoices.TabIndex = 1;
+            buttonDeleteChoices.Text = "Delete choice(s)";
+            buttonDeleteChoices.UseVisualStyleBackColor = true;
+            buttonDeleteChoices.Click += buttonDeleteChoices_Click;
             // 
-            // button4
+            // buttonUpdateChoice
             // 
-            button4.Anchor = AnchorStyles.Left;
-            button4.Location = new Point(231, 3);
-            button4.Name = "button4";
-            button4.Size = new Size(105, 23);
-            button4.TabIndex = 2;
-            button4.Text = "Update choice";
-            button4.UseVisualStyleBackColor = true;
+            buttonUpdateChoice.Anchor = AnchorStyles.Left;
+            buttonUpdateChoice.Location = new Point(231, 3);
+            buttonUpdateChoice.Name = "buttonUpdateChoice";
+            buttonUpdateChoice.Size = new Size(105, 23);
+            buttonUpdateChoice.TabIndex = 2;
+            buttonUpdateChoice.Text = "Update choice";
+            buttonUpdateChoice.UseVisualStyleBackColor = true;
+            buttonUpdateChoice.Click += buttonUpdateChoice_Click;
             // 
-            // listBox1
+            // listBoxChoices
             // 
-            listBox1.Dock = DockStyle.Fill;
-            listBox1.FormattingEnabled = true;
-            listBox1.Items.AddRange(new object[] { "test1", "test2" });
-            listBox1.Location = new Point(61, 61);
-            listBox1.MultiColumn = true;
-            listBox1.Name = "listBox1";
-            listBox1.SelectionMode = SelectionMode.MultiExtended;
-            listBox1.Size = new Size(367, 211);
-            listBox1.TabIndex = 6;
+            listBoxChoices.Dock = DockStyle.Fill;
+            listBoxChoices.FormattingEnabled = true;
+            listBoxChoices.Location = new Point(61, 61);
+            listBoxChoices.MultiColumn = true;
+            listBoxChoices.Name = "listBoxChoices";
+            listBoxChoices.SelectionMode = SelectionMode.MultiSimple;
+            listBoxChoices.Size = new Size(367, 182);
+            listBoxChoices.TabIndex = 6;
+            // 
+            // buttonAdd
+            // 
+            buttonAdd.Location = new Point(61, 281);
+            buttonAdd.Name = "buttonAdd";
+            buttonAdd.Size = new Size(125, 23);
+            buttonAdd.TabIndex = 7;
+            buttonAdd.Text = "Add to question set";
+            buttonAdd.UseVisualStyleBackColor = true;
+            buttonAdd.Click += buttonAdd_Click;
             // 
             // ListQuestionForm
             // 
@@ -170,13 +188,14 @@
 
         private TableLayoutPanel tableLayoutPanel1;
         private Label label1;
-        private TextBox textBox1;
-        private Button button1;
+        private TextBox textBoxChoice;
+        private Button buttonAddChoice;
         private Label label2;
         private FlowLayoutPanel flowLayoutPanel1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private ListBox listBox1;
+        private Button buttonSetAnswers;
+        private Button buttonDeleteChoices;
+        private Button buttonUpdateChoice;
+        private ListBox listBoxChoices;
+        private Button buttonAdd;
     }
 }

@@ -3,52 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\textquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|solutionrelative:textquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|c:\\users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\lugod-finalproject\\listquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|solutionrelative:listquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|c:\\users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\lugod-finalproject\\radioquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|solutionrelative:radioquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|c:\\users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\lugod-finalproject\\radioquestionform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|solutionrelative:radioquestionform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|c:\\users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\lugod-finalproject\\textquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|solutionrelative:textquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|c:\\users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\lugod-finalproject\\textquestionform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|solutionrelative:textquestionform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|c:\\users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\lugod-finalproject\\study.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|solutionrelative:study.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|c:\\users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\lugod-finalproject\\createquestionset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|solutionrelative:createquestionset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|c:\\users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\lugod-finalproject\\listquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|solutionrelative:listquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|c:\\users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\lugod-finalproject\\createquestionset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|solutionrelative:createquestionset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|c:\\users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\lugod-finalproject\\radioquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|solutionrelative:radioquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|c:\\users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\lugod-finalproject\\listquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|solutionrelative:listquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|c:\\users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\lugod-finalproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|c:\\users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\lugod-finalproject\\study.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|solutionrelative:study.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|c:\\users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\lugod-finalproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|c:\\users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\lugod-finalproject\\listquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DA2F1D85-B795-4862-B0AB-CD69CDEE153C}|Lugod-FinalProject.csproj|solutionrelative:listquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,58 +42,18 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateQuestionSet.cs",
-              "DocumentMoniker": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\CreateQuestionSet.cs",
-              "RelativeDocumentMoniker": "CreateQuestionSet.cs",
-              "ToolTip": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\CreateQuestionSet.cs",
-              "RelativeToolTip": "CreateQuestionSet.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAewCIAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T12:21:55.616Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ListQuestionForm.cs",
-              "DocumentMoniker": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\ListQuestionForm.cs",
-              "RelativeDocumentMoniker": "ListQuestionForm.cs",
-              "ToolTip": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\ListQuestionForm.cs",
-              "RelativeToolTip": "ListQuestionForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T13:36:04.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RadioQuestionForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\RadioQuestionForm.Designer.cs",
-              "RelativeDocumentMoniker": "RadioQuestionForm.Designer.cs",
-              "ToolTip": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\RadioQuestionForm.Designer.cs",
-              "RelativeToolTip": "RadioQuestionForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T13:35:52.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "CreateQuestionSet.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\CreateQuestionSet.cs",
               "RelativeDocumentMoniker": "CreateQuestionSet.cs",
               "ToolTip": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\CreateQuestionSet.cs [Design]",
               "RelativeToolTip": "CreateQuestionSet.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T09:03:43.737Z",
+              "WhenOpened": "2025-11-28T14:24:10.152Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -121,95 +65,84 @@
               "ToolTip": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\ListQuestionForm.cs [Design]",
               "RelativeToolTip": "ListQuestionForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T13:08:50.462Z",
+              "WhenOpened": "2025-11-28T13:19:05.026Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TextQuestionForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\TextQuestionForm.cs",
-              "RelativeDocumentMoniker": "TextQuestionForm.cs",
-              "ToolTip": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\TextQuestionForm.cs [Design]",
-              "RelativeToolTip": "TextQuestionForm.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "ListQuestionForm.cs",
+              "DocumentMoniker": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\ListQuestionForm.cs",
+              "RelativeDocumentMoniker": "ListQuestionForm.cs",
+              "ToolTip": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\ListQuestionForm.cs",
+              "RelativeToolTip": "ListQuestionForm.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAcwA4AAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T12:46:54.156Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-28T12:52:20.385Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RadioQuestionForm.cs",
-              "DocumentMoniker": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\RadioQuestionForm.cs",
-              "RelativeDocumentMoniker": "RadioQuestionForm.cs",
-              "ToolTip": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\RadioQuestionForm.cs",
-              "RelativeToolTip": "RadioQuestionForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CreateQuestionSet.cs",
+              "DocumentMoniker": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\CreateQuestionSet.cs",
+              "RelativeDocumentMoniker": "CreateQuestionSet.cs",
+              "ToolTip": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\CreateQuestionSet.cs",
+              "RelativeToolTip": "CreateQuestionSet.cs",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAmwOkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T13:35:55.919Z",
+              "WhenOpened": "2025-11-28T10:19:15.505Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "TextQuestionForm.cs",
-              "DocumentMoniker": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\TextQuestionForm.cs",
-              "RelativeDocumentMoniker": "TextQuestionForm.cs",
-              "ToolTip": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\TextQuestionForm.cs",
-              "RelativeToolTip": "TextQuestionForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T12:47:00.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TextQuestionForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\TextQuestionForm.Designer.cs",
-              "RelativeDocumentMoniker": "TextQuestionForm.Designer.cs",
-              "ToolTip": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\TextQuestionForm.Designer.cs",
-              "RelativeToolTip": "TextQuestionForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T12:46:49.155Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RadioQuestionForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\RadioQuestionForm.cs",
-              "RelativeDocumentMoniker": "RadioQuestionForm.cs",
-              "ToolTip": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\RadioQuestionForm.cs [Design]",
-              "RelativeToolTip": "RadioQuestionForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T13:13:49.017Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T08:57:08.518Z",
+              "WhenOpened": "2025-11-28T09:57:47.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T08:53:28.816Z"
+              "WhenOpened": "2025-11-28T09:57:44.979Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Study.cs",
+              "DocumentMoniker": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\Study.cs",
+              "RelativeDocumentMoniker": "Study.cs",
+              "ToolTip": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\Study.cs",
+              "RelativeToolTip": "Study.cs",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAuwOAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T09:13:55.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Study.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\Study.cs",
+              "RelativeDocumentMoniker": "Study.cs",
+              "ToolTip": "C:\\Users\\lugod\\source\\repos\\waleedlugod\\iscs3050\\Lugod-FinalProject\\Study.cs [Design]",
+              "RelativeToolTip": "Study.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T09:13:48.125Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -30,8 +30,9 @@
         {
             tableLayoutPanel1 = new TableLayoutPanel();
             label2 = new Label();
-            textBox1 = new TextBox();
-            checkBox1 = new CheckBox();
+            textBoxTextAnswer = new TextBox();
+            checkBoxTextSensitivity = new CheckBox();
+            buttonAdd = new Button();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -41,22 +42,23 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle());
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Controls.Add(label2, 0, 0);
-            tableLayoutPanel1.Controls.Add(textBox1, 1, 0);
-            tableLayoutPanel1.Controls.Add(checkBox1, 1, 1);
+            tableLayoutPanel1.Controls.Add(textBoxTextAnswer, 1, 0);
+            tableLayoutPanel1.Controls.Add(checkBoxTextSensitivity, 1, 1);
+            tableLayoutPanel1.Controls.Add(buttonAdd, 1, 2);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 3;
+            tableLayoutPanel1.RowCount = 4;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle());
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(317, 75);
+            tableLayoutPanel1.Size = new Size(282, 128);
             tableLayoutPanel1.TabIndex = 0;
-            tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.Left;
+            label2.Anchor = AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Location = new Point(3, 7);
             label2.Name = "label2";
@@ -64,24 +66,34 @@
             label2.TabIndex = 1;
             label2.Text = "Answer:";
             // 
-            // textBox1
+            // textBoxTextAnswer
             // 
-            textBox1.Anchor = AnchorStyles.Left;
-            textBox1.Location = new Point(58, 3);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(256, 23);
-            textBox1.TabIndex = 2;
+            textBoxTextAnswer.Anchor = AnchorStyles.Left;
+            textBoxTextAnswer.Location = new Point(58, 3);
+            textBoxTextAnswer.Name = "textBoxTextAnswer";
+            textBoxTextAnswer.Size = new Size(221, 23);
+            textBoxTextAnswer.TabIndex = 2;
             // 
-            // checkBox1
+            // checkBoxTextSensitivity
             // 
-            checkBox1.Anchor = AnchorStyles.Left;
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(58, 32);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(102, 19);
-            checkBox1.TabIndex = 5;
-            checkBox1.Text = "case sensitive?";
-            checkBox1.UseVisualStyleBackColor = true;
+            checkBoxTextSensitivity.Anchor = AnchorStyles.Left;
+            checkBoxTextSensitivity.AutoSize = true;
+            checkBoxTextSensitivity.Location = new Point(58, 32);
+            checkBoxTextSensitivity.Name = "checkBoxTextSensitivity";
+            checkBoxTextSensitivity.Size = new Size(102, 19);
+            checkBoxTextSensitivity.TabIndex = 5;
+            checkBoxTextSensitivity.Text = "case sensitive?";
+            checkBoxTextSensitivity.UseVisualStyleBackColor = true;
+            // 
+            // buttonAdd
+            // 
+            buttonAdd.Location = new Point(58, 57);
+            buttonAdd.Name = "buttonAdd";
+            buttonAdd.Size = new Size(131, 23);
+            buttonAdd.TabIndex = 6;
+            buttonAdd.Text = "Add to question set";
+            buttonAdd.UseVisualStyleBackColor = true;
+            buttonAdd.Click += buttonAdd_Click;
             // 
             // TextQuestionForm
             // 
@@ -89,7 +101,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(tableLayoutPanel1);
             Name = "TextQuestionForm";
-            Size = new Size(317, 75);
+            Size = new Size(282, 128);
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             ResumeLayout(false);
@@ -99,7 +111,8 @@
 
         private TableLayoutPanel tableLayoutPanel1;
         private Label label2;
-        private TextBox textBox1;
-        private CheckBox checkBox1;
+        private TextBox textBoxTextAnswer;
+        private CheckBox checkBoxTextSensitivity;
+        private Button buttonAdd;
     }
 }
